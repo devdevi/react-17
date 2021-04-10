@@ -1,9 +1,8 @@
 import React from 'react';
-import '../styles/components/app.scss';
 
-const App = () => (
+const Layout = () => (
   <div>
-    <h1>Hi</h1>
+    <Home/>
   </div>
 );
-export default App;
+export default Layout;

@@ -7,9 +7,13 @@ module.exports = {
   output: {
     path: path.resolve(__dirname, 'dist'),
     filename: 'bundle.js',
+    publicPath: '/'
   },
   resolve: {
-    extensions: ['.js', 'jsx'],
+    alias: {
+        components: path.resolve(__dirname, 'src/components'),
+      },
+    extensions: ['.js', '.jsx'],
   },
   module: {
     rules: [
@@ -54,5 +58,6 @@ module.exports = {
     compress: true,
     port: 3005,
     open: true,
+    historyApiFallback: true
   },
 };
