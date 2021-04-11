@@ -1,7 +1,7 @@
 import React from 'react';
 
 
-const Products =  ({product}) => (
+const Products =  ({product, handleAddToCart}) => (
         <div className="Products-item">
             <img src={product.image} alt={product.title}/>
             <div className="Product-item-info">
@@ -9,7 +9,7 @@ const Products =  ({product}) => (
                 <span>{' '}${' '}{product.price}</span></h2>
                 <p className="">{product.description}</p>
             </div>
-            {/* <button type="button" >Comprar onClick={() => handleClick}</button> */}
+            <button type="button" onClick={ handleAddToCart(product) }>Comprar</button>
         </div>
     )
 
