@@ -37,7 +37,7 @@ const Information = () => {
             {form.name}
             <input type="text" placeholder="Nombre completo" name="name" />
             <input type="text" placeholder="Correo Electrónico" name="email" />
-            <input type="text" placeholder="Dirección" name="addres" />
+            <input type="text" placeholder="Dirección" name="address" />
             <input type="text" placeholder="apto" name="apto" />
             <input type="text" placeholder="Ciudad" name="city" />
             <input type="text" placeholder="País" name="country" />

@@ -1,7 +1,9 @@
 {
-    "presets": [
-        // compiladores de ecs6, react 
-        "@babel/preset-env",
-        "@babel/preset-react"
-    ]
+"presets": [
+    "@babel/preset-env",
+    "@babel/preset-react"
+],
+"plugins": [
+    ["@babel/transform-runtime"]
+]
 }
