@@ -8,7 +8,7 @@ import '../styles/components/Payment.css';
 const Payments = () => {
   const { state:{ buyer, cart }, addNewOrder } = useContext(AppContext)
   const paypalOptions = {
-    clientId: 'access_token$sandbox$94nqqvqbszc2qwhp$6708623b77d4a30ca902f5cb3f4d511b',
+    clientId: 'AVM9oZLiGiv5Fr20CRxaAMEwimh2uWbYJzR8q4ACqBkByVNjpMAZeHempOuqPJK_IqCYCw0lyp1tmWkZ',
     intent: 'capture',
     currency: 'USD'
   }
@@ -47,7 +47,7 @@ const handlePaymentSuccess = (data) => {
         <div className="Payment-button">
         <PayPalButton
         options = { paypalOptions}
-        amount = {handleSumTotal}
+        amount = "0.01"
         createOrder = {() => console.log('Start Payment')}
         onApprove ={() => console.log('onApprove')}
         onCancel ={() => console.log('onApprove')}
